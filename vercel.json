@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "functions": {
+    "api/*.py": { "maxDuration": 30 }
+  },
+  "rewrites": [
+    { "source": "/api/health", "destination": "/api/health.py" },
+    { "source": "/api/cluster", "destination": "/api/cluster.py" },
+    { "source": "/api/forecast", "destination": "/api/forecast.py" }
+  ]
+}
